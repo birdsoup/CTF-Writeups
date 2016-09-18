@@ -78,11 +78,11 @@ We can then call dup(socket fd) twice to create file descriptors 0 and 1 that us
 
 We can get the address of close and dup the same way we got the addresses of the other libc functions.
 
-To find the socket being used, I launched the program in gdb, then looked at its open file descripts in /proc/<pid>/fd/
+To find the socket being used, I launched the program in gdb, then looked at its open file descriptors in /proc/\<pid\>/fd/
 ![gdb output](images/gdb.png)
 To do this, simply set a breakpoint anywhere after the socket is created, and look at its file descriptors.
 
-We can see from /proc/<pid>/fd that the socket has file descriptor 4.
+We can see from /proc/\<pid\>/fd that the socket has file descriptor 4.
 
 Now our exploit looks like this:
 
