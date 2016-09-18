@@ -60,7 +60,7 @@ We can also get the address of the string "/bin/sh" found libc-2.19.so
 If we can load "/bin/sh" into rdi, then return to system(), we can get a shell on the server.
 
 The easiest way to get "/bin/sh" into rdi is to include its address into our input, then pop it into rdi using a rop gadget. To find gadgets for this exploit, I used radare2:
-~[finding gadget in radare](images/r2.png)
+![finding gadget in radare](images/r2.png)
 
 If we overwrite the return address (rbp + 8) with the address of this gadget, put the address of "/bin/sh" in rbp + 16, and put the address of system into rbp + 24, func2 will return to the gadget, pop
 "/bin/sh" into rdi, then return into system, executing /bin/sh.
