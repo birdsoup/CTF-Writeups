@@ -1,7 +1,7 @@
 ![description](images/description.png)
 
 The challenge contains a link to a website:
-![site index](images/site.png)
+![site index](images/website.png)
 
 Going to the about tab reveals that the site uses PHP and git.
 ![about page](images/about.png)
