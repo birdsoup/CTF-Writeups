@@ -14,7 +14,7 @@ Once this setup is done, we can run the program locally for testing.
 I could only get the program to run as root (probably not the safest thing to do, but I didn't feel like fixing the permission errors I was getting)
 
 running sudo ./tutorial 8001 in one terminal then nc 127.0.0.1 8001 in another terminal lets us connect to the service:
-![first run](images/firstrun.png)
+![first run](images/first_run.png)
 
 There are 3 menu options:
 1. Manual: this prints some address out, if this is a leak in libc, we can use this address and the given libc to get the address of anything in libc
