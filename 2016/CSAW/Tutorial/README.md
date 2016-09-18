@@ -17,6 +17,7 @@ running sudo ./tutorial 8001 in one terminal then nc 127.0.0.1 8001 in another t
 ![first run](images/first_run.png)
 
 There are 3 menu options:
+
 1. Manual: this prints some address out, if this is a leak in libc, we can use this address and the given libc to get the address of anything in libc
 
 2. This prompts you to enter your exploit, this is probably where we should look for a vulnerability
