@@ -1,7 +1,5 @@
 ![description](images/description.png)
 
-TODO: Writeup
-
 This challenge provides an executable and a libc.so file.
 
 Running this file causes a segfault, so lets look at it in IDA:
