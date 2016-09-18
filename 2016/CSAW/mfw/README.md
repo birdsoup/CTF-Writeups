@@ -1,4 +1,4 @@
-![description](images/description)
+![description](images/description.png)
 
 The challenge contains a link to a website:
 ![site index](images/site.png)

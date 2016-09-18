@@ -1,4 +1,4 @@
-![description](images/description)
+![description](images/description.png)
 
 Stage 1: http://fuzyll.com/files/csaw2016/start
 This site gives the hint:

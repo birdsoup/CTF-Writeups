@@ -1,4 +1,4 @@
-![description](images/description)
+![description](images/description.png)
 
 The challenge provides us with a binary "warmup".
 Running this binary prints a hex value, then takes user input.

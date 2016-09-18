@@ -1,4 +1,4 @@
-![description](images/description)
+![description](images/description.png)
 
 TODO: Writeup
 
