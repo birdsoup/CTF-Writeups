@@ -57,7 +57,7 @@ So we can simply enter nothing as input to func 2, read the stack canary from th
 The Exploit:
 In order to exploit this vulnerability, we will need to use ROP.
 We can get the address of system() using the leaked memory address and offsets from libc-2.19.so 
-We can also get the address of the string "/bin/sh" found libc-2.19.so
+We can also get the address of the string "/bin/sh" found libc-2.19.so.
 If we can load "/bin/sh" into rdi, then return to system(), we can get a shell on the server.
 
 The easiest way to get "/bin/sh" into rdi is to include its address into our input, then pop it into rdi using a rop gadget. To find gadgets for this exploit, I used radare2:
@@ -93,6 +93,7 @@ This will bypass the stack canary, call close(0), call close(1), call dup(4) twi
 An example of the final exploit can be found in tutorial.py
 
 ![running the exploit](images/flag.png)
+
 And we're done!
 Flag : FLAG{3ASY_R0P_R0P_P0P_P0P_YUM_YUM_CHUM_CHUM}
 
