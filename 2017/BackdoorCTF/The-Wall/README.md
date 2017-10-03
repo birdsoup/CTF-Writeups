@@ -83,7 +83,7 @@ Normally at this point, I'd try to pull information out of the database using th
 
 By messing around with the login form and looking at the source code, we noticed that we get different outputs depending on whether or not the SELECT statement returned at least 1 user. When the SELECT statement finds a user, and we give the wrong password, we get an output of "Wrong identity for : ".$users['username'], but when we don't find a valid user we get an output of "No such person exists". As such, we can insert code into the SQL query that will cause the SELECT to only return a user conditional on some information about their password. 
 
-The way we did this is by adding onto the WHERE clause: we used a username of the form "LordCommander' AND password LIKE 'a%", in order to find whether or not the password starts with an a. When inserted into the SQL query string, the query becomes: 
+The way we did this is by adding onto the WHERE clause: we used a username of the form "LordCommander' AND password LIKE 'a%", in order to find whether or not the password starts with an a (the % sign in SQL is a wildcard character, so a% matches any string starting with an a). When inserted into the SQL query string, the query becomes: 
 
 ```sql
 "SELECT * FROM users WHERE username='LordCommander' AND password LIKE 'a%'"
