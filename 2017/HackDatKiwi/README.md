@@ -1,5 +1,6 @@
 We're given the following source code:
-```<?php
+```php
+<?php
 if (isset($_GET['src']))
     highlight_file(__FILE__) and die();
 if (isset($_GET['md5']))
@@ -26,7 +27,7 @@ In particular, if two strings both start with "0e" and contain numbers afterward
 
 To solve this, I just wrote a quick PHP script to generate strings of this form until one hashed to a hash of this form.
 
-```
+```php
 <?php
 echo "running script";
  $base = "0e";
