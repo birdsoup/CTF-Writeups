@@ -119,6 +119,8 @@ We can only use functions that follow the format: `func(filename, input)`, where
 
 We also cannot use any of the functions listed in the `disable_functions` section of the server config (ie, most of the functions that would allow us to execute the code). Luckily, the server still allows us to use popen to execute files.
 
+![disabled functions](images/disabled.png)
+
 ## Actual commands used:
 We write the script to the file with file_put_contents(filename, our_script).
 
