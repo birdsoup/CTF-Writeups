@@ -104,7 +104,7 @@ Using this, we were able to fully decrypt each of the encrypted files.
 
 At this point, we looked at the decrypted files, and were disappointed to find that the `hint.gif` did not contain the flag (and super_cipher.py didn't contain any more useful info):
 
-![decrypted hint](images/hint.png)
+![decrypted hint](images/hint.gif)
 
 From the hint, we could see that the key that was input to bootstrap the "prg" is a flag for the challenge, and so we need to reverse the prg, and walk our way back through the keystream to get what the input key was.
 
